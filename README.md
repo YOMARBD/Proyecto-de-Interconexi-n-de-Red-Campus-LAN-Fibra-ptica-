@@ -23,9 +23,26 @@ La solución resuelve dos desafíos críticos de ingeniería de redes: la atenua
 ## Esquema de Direccionamiento Lógico (Subneteo FLSM)
 Se aplicó una segmentación manual utilizando Máscaras de Subred de Longitud Fija (**FLSM**) bajo el prefijo `/26` para optimizar el espacio de direcciones IP y aislar los dominios de difusión.
 
-|       Subred        |       Rango IP Utilizable    | Máscara de Subred | Gateway Asignado |       Propósito / Ubicación             |
-| **192.168.1.0/26**  |   192.168.1.1 - 192.168.1.62 |  255.255.255.192  |    192.168.1.1   |     Edificio 001 (Hosts Locales)        |
-| **192.168.1.64/26** | 192.168.1.65 - 192.168.1.126 |  255.255.255.192  |   192.168.1.65   | Edificio 002 (Switch Multicapa & Hosts) |
+|       Subred        |     
+| **192.168.1.0/26**  |   
+| **192.168.1.64/26** | 
+
+|       Rango IP Utilizable    |
+|   192.168.1.1 - 192.168.1.62 |
+| 192.168.1.65 - 192.168.1.126 |
+
+ | Máscara de Subred |
+ |  255.255.255.192  | 
+ |  255.255.255.192  |
+
+ | Gateway Asignado | 
+ |    192.168.1.1   |
+ |   192.168.1.65   |
+
+ | Propósito / Ubicación  |
+ | Edificio 001 (Hosts Locales) |
+ | Edificio 002 (Switch Multicapa & Hosts) |
+
 
 ---
 
